@@ -1,0 +1,38 @@
+{
+  "name": "happysir/s-stdlib",
+  "description": "a base library",
+  "type": "library",
+  "license": "Apache-2.0",
+  "authors": [
+    {
+      "name": "happysir",
+      "email": "luotao954@gmail.com"
+    }
+  ],
+  "require": {
+    "php": ">7.2",
+    "ext-json": "*"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^7.5"
+  },
+  "autoload": {
+    "psr-4": {
+      "Happysir\\Lib\\": "src/"
+    },
+    "files": [
+      "./src/Helper/Functions.php"
+    ]
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Happysir\\Lib\\Test\\": "test/"
+    }
+  },
+  "repositories": {
+    "packagist": {
+      "type": "composer",
+      "url": "https://mirrors.aliyun.com/composer/"
+    }
+  }
+}
